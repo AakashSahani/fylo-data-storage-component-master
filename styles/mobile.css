@@ -18,13 +18,15 @@
 	}
 
 	.files {
-		border: 1px solid white;
+		/* border: 1px solid white; */
+		background-color: var(--DarkBlue);
+		border-radius: 0 50% 0 0;
 		width: 100%;
 		margin: 0.5rem auto;
-		height: 30vh;
+		height: 25vh;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: left;
 		padding-left: 3rem;
 	}
@@ -36,18 +38,102 @@
 
 	.files > .icon {
 		height: 50%;
-		border: 1px solid white;
+		/* margin-top: 1rem; */
+		/* border: 1px solid white; */
 	}
 
 	.icon > img {
-		background-color: var(--DarkBlue);
+		background-color: var(--VeryDarkBlue);
+		aspect-ratio:  1/1;
+		padding: 0.75rem;
+		width: auto;
+		height: 50px;
+		border-radius: .5rem;
 	}
 
 	.storage {
+		background-color: var(--DarkBlue);
+		position: relative;
 		height: 25vh;
 		text-align: center;
-		border: 1px solid white;
+		/* border: 1px solid white; */
 		width: 100%;
 		margin: 0.5rem auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
+
+	.storage > p {
+		padding: 0 2rem;
+		margin-bottom: 1rem;
+		font-size: 13px;
+		
+	}
+	.container {
+		/* border: 1px solid white; */
+		width: 100%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.storage-bar {
+		height: 1rem;
+		background-color:var(--VeryDarkBlue);
+		width: 90%;
+		border-radius: 1rem;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: .5rem;
+	}
+	.text {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+		padding:  0 1rem;
+		margin-bottom: 1rem;
+	}
+	.progress {
+		position: relative;
+		border-radius: 1rem;
+		height: 100%;
+		width: 75%;
+		display: flex;
+		align-items: center;
+		background:linear-gradient(.25turn,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+	}
+
+	.circle {
+		position: absolute;
+		height: 13px;
+		background-color: white;
+		width:13px;
+		right: 0;
+		margin-right: .2rem;
+		border-radius: 50%;
+	}
+	.storage-left {
+		position: absolute;
+		transform: translateY(50%);
+		background-color: white;
+		color: black;
+		display: flex;
+		height: 4rem;
+		align-items: center;
+		padding: 1rem;
+		bottom: 0;
+		border-radius: 1rem;
+	}
+	.storage-left > b {
+		margin-right: .5rem;
+		font-size: 2rem;
+	}
+	.storage-left > p {
+		color: grey;
+		font-size: .9rem;
+	}
+
 }
