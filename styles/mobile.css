@@ -1,0 +1,53 @@
+@media (max-width: 500px) {
+	body {
+		background: url('../images/bg-mobile.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		min-height: 100vh;
+		color: var(--PaleBlue);
+	}
+
+	main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		padding: 0 2rem;
+	}
+
+	.files {
+		border: 1px solid white;
+		width: 100%;
+		margin: 0.5rem auto;
+		height: 30vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: left;
+		padding-left: 3rem;
+	}
+
+	.files > img {
+		width: 50%;
+		margin: auto 0;
+	}
+
+	.files > .icon {
+		height: 50%;
+		border: 1px solid white;
+	}
+
+	.icon > img {
+		background-color: var(--DarkBlue);
+	}
+
+	.storage {
+		height: 25vh;
+		text-align: center;
+		border: 1px solid white;
+		width: 100%;
+		margin: 0.5rem auto;
+	}
+}

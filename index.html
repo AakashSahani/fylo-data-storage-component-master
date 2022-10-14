@@ -10,10 +10,28 @@
 			sizes="32x32"
 			href="./images/favicon-32x32.png"
 		/>
-
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
 		<title>Frontend Mentor | Fylo data storage component</title>
 	</head>
 	<body>
-		<!-- You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB -->
+		<main>
+			<div class="files">
+				<img src="./images/logo.svg" alt="Logo" />
+				<div class="icon">
+					<img src="./images/icon-document.svg" alt="Document" />
+					<img src="./images/icon-folder.svg" alt="Folder" />
+					<img src="./images/icon-upload.svg" alt="Upload" />
+				</div>
+			</div>
+			<div class="storage">
+				<p>You’ve used 815 GB of your storage</p>
+				<div class="storage-bar"></div>
+				<div class="storage-left">
+					<b>185</b>
+					<p>GB LEFT</p>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
